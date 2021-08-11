@@ -105,7 +105,7 @@ body {
     <label for="css">CSS</label><br>
     <input type="radio" id="javascript" name="fav_language" value="JavaScript">
     <label for="javascript">JavaScript</label>
-  <p><b>Pricing</b> (USD)</p>
+  <p><b>Starting Price</b> (USD)</p>
     <input type="number" min="0.00" max="10000.00" step="0.01" />
   <p><b>Description</b></p>
     <textarea rows = "5" cols = "60" name = "description">
