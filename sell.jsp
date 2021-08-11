@@ -53,7 +53,6 @@ body {
   transition: 0.3s;
   background-color: #f1f1f1;
 }
-
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
@@ -82,14 +81,36 @@ body {
   </div>
 </div>
 
+<!-- change action_page.php to the .jsp page you want to send inputs to -->
 <form action="/action_page.php">
-  <label for="cars">Product Category:</label>
-  <select name="cars" id="cars">
-    <option value="">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="opel">Opel</option>
-  </select>
-  <br><br>
+  <p><b>Product Category</b></p>
+    <select name="cars" id="cars">
+      <option value="">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+    </select>
+  <p><b>Name of Product</b></p>
+    <input type="text" id="fname" name="fname"><br>
+  <p><b>Application</b></p>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label>
+  <p><b>Country of Origin</b></p>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+  <p><b>Description</b></p>
+    <textarea rows = "5" cols = "60" name = "description">
+            Enter details here...
+    </textarea>
+  <br>
+  <br>
   <input type="submit" value="Submit">
 </form>
 
